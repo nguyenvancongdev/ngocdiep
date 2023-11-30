@@ -13,6 +13,7 @@ public class MyPackage implements ReactPackage {
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
         modules.add(new MyToastModule(reactContext));
+        modules.add(new WindowManagerModule(reactContext));
         return modules;
     }
 
